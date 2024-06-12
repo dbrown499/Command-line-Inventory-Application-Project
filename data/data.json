@@ -1,0 +1,32 @@
+[
+    {
+        "id": "",
+        "name": "Apple",
+        "priceInCents": 75,
+        "inStock": true
+    },
+    {
+        "id": "",
+        "name": "Banana",
+        "priceInCents": 30,
+        "inStock": true
+    },
+    {
+        "id": "",
+        "name": "Orange",
+        "priceInCents": 50,
+        "inStock": true
+    },
+    {
+        "id": "",
+        "name": "Grapes",
+        "priceInCents": 179,
+        "inStock": true
+    },
+    {
+        "id": "",
+        "name": "Mango",
+        "priceInCents": 200,
+        "inStock": true
+    }
+]

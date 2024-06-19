@@ -1,13 +1,20 @@
 {
   "name": "command-line-inventory-application-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Updating fruit inventory",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "index": "node index.js index",
+    "create": "node index.js create",
+    "show": "node index.js show",
+    "update": "node index.js update",
+    "destroy": "node index.js destroy",
+    "cart": "node index.js cart",
+    "cancel": "node index.js cancel cart"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diamond Brown",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0",

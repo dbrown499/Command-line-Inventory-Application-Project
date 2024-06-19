@@ -1,32 +1,44 @@
 [
     {
-        "id": "",
-        "name": "Apple",
-        "priceInCents": 75,
-        "inStock": true
+        "id": "JwY-_",
+        "name": "Coconut",
+        "priceInCents": 79,
+        "inStock": false
     },
     {
-        "id": "",
+        "id": "1ellE",
+        "name": "Apple",
+        "priceInCents": 75,
+        "inStock": false
+    },
+    {
+        "id": "EImyV",
         "name": "Banana",
         "priceInCents": 30,
         "inStock": true
     },
     {
-        "id": "",
+        "id": "a-mPY",
         "name": "Orange",
         "priceInCents": 50,
         "inStock": true
     },
     {
-        "id": "",
+        "id": "l80FS",
         "name": "Grapes",
         "priceInCents": 179,
         "inStock": true
     },
     {
-        "id": "",
+        "id": "LZn3B",
         "name": "Mango",
-        "priceInCents": 200,
+        "priceInCents": 90,
+        "inStock": true
+    },
+    {
+        "id": "rKSgP",
+        "name": "Strawberry",
+        "priceInCents": 99,
         "inStock": true
     }
 ]

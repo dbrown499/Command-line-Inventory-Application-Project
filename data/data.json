@@ -30,12 +30,6 @@
         "inStock": true
     },
     {
-        "id": "LZn3B",
-        "name": "Mango",
-        "priceInCents": 90,
-        "inStock": true
-    },
-    {
         "id": "rKSgP",
         "name": "Strawberry",
         "priceInCents": 99,

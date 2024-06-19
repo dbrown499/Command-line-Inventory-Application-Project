@@ -1,5 +1,5 @@
 const inform = console.log;
-const { create, indexOfAllFruit, showOneFruit, updateFruitInfo } = require('./src/fruitController');
+const { create, indexOfAllFruit, showOneFruit, updateFruitInfo, destroyFruits, cart, cancelCart } = require('./src/fruitController');
 const { readJSONFile, writeJSONFile } = require('./src/helper');
 
 
@@ -31,13 +31,14 @@ function run() {
             writeToFile = true;
             break;
         case "destroy":
-            inform("this is destroy");
+            theUpdatedFruitsList = destroyFruits(data, nameOffruit);
+            writeToFile = true;            
             break;
         case "cart":
-            inform("this is the cart");
+            inform(cart(data, nameOffruit));
             break;
         case "cancel":
-            inform("this is the cancel cart");
+            inform(cancelCart());
             break;
         default:
             inform("There was an error.");

@@ -4,7 +4,7 @@ function indexOfAllFruit(fruitData) {
     return fruitData.map((fruit) => fruit.name + ":" + ` $${(fruit.priceInCents / 100)} ${!fruit.inStock ? 'OUT OF STOCK' : ''}`);
 }
 
-function create(fruits, fruitName, price, stockNum) {
+function create(fruitData, fruitName, price, stockNum) {
     const fruit = {
         "id": nanoid(5),
         "name": fruitName,
@@ -16,9 +16,9 @@ function create(fruits, fruitName, price, stockNum) {
         fruit.inStock = true;
     };
 
-    fruits.push(fruit);
+    fruitData.push(fruit);
 
-    return fruits;
+    return fruitData;
 }
 
 function showOneFruit(fruitData, fruitName) {
@@ -39,6 +39,29 @@ function updateFruitInfo(fruitData, fruitName, newInfo, nameOfKey) {
     return fruitData;
 }
 
+function destroyFruits(fruitData, fruitName){
+    let fruitFound = fruitData.filter(fruit => fruit.name !== fruitName);
+
+    return fruitFound;
+}
+
+function cart(fruitData, fruitName, cartData){
+    let fruitFound = fruitData.find(fruit => fruit.name === fruitName);
+    
+    return fruitFound;
+}
+
+function cancelCart(cartData){
+    return cartData = null;
+}
 
 
-module.exports = { create, indexOfAllFruit, showOneFruit, updateFruitInfo }
+module.exports = { 
+    create, 
+    indexOfAllFruit, 
+    showOneFruit, 
+    updateFruitInfo, 
+    destroyFruits,
+    cart,
+    cancelCart 
+}
